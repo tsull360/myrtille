@@ -44,5 +44,9 @@ namespace Myrtille.Enterprise
         public string StartRemoteProgram { get; set; }
 
         public bool PromptForCredentials { get; set; }
+
+        public string Comment { get; set; }
+
+        public string Parent { get; set; }
     }
 }
