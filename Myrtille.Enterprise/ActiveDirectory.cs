@@ -205,7 +205,9 @@ namespace Myrtille.Enterprise
                     Protocol = editHost.Protocol,
                     HostType = editHost.HostType,
                     StartRemoteProgram = editHost.StartRemoteProgram,
-                    PromptForCredentials = editHost.PromptForCredentials
+                    PromptForCredentials = editHost.PromptForCredentials,
+                    Comment = editHost.Comment,
+                    Parent = editHost.Parent
                 };
 
                 db.Host.Add(host);

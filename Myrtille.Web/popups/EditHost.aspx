@@ -77,6 +77,14 @@
                     <h5><label id="promptCredentialsLabel" for="promptCredentials">Prompt for Credentials</label></h5>
                     <input type="checkbox" runat="server" id="promptCredentials" title="prompt for credentials (or use the logged in user otherwise)"/>
                 </div>
+                <div class="editHostPopupInput">
+                    <h5><label id="CommentLabel" for="hostComment">Comment</label></h5>
+                    <input type="text" runat="server" id="hostComment" title="Enter connection object comment"/>
+                </div>
+                <div class="editHostPopupInput">
+                    <h5><label id="ParentLabel" for="hostPrent">Parent</label></h5>
+                    <input type="text" runat="server" id="hostParent" title="Enter connection object parent container. Format is Folder/Folder"/>
+                </div>
 
                 <br/>
                 <div class="editHostPopupInput">

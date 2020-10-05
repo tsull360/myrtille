@@ -88,6 +88,8 @@ namespace Myrtille.Web
                                         securityProtocol.SelectedIndex = (int)host.Protocol;
                                         promptCredentials.Checked = host.PromptForCredentials;
                                         startProgram.Value = host.StartRemoteProgram;
+                                        comment.Value = host.Comment;
+                                        parent.Value = host.Parent;
                                     }
                                 }
                                 catch (Exception exc)
@@ -155,6 +157,8 @@ namespace Myrtille.Web
                     Protocol = (SecurityProtocol)securityProtocol.SelectedIndex,
                     StartRemoteProgram = startProgram.Value,
                     PromptForCredentials = string.IsNullOrEmpty(_enterpriseSession.Domain) ? true : promptCredentials.Checked
+                    Comment = comment.Value;
+                    Parent = parent.Value;
                 };
 
                 if (_hostId != null)
